@@ -5,7 +5,7 @@ class Hooks
     class << self
 
       def version_file
-        @version_file ||= File.expand_path(File.join(File.dirname(__FILE__),"../../lib/hcah_client/version.rb"))
+        @version_file ||= File.expand_path(File.join(File.dirname(__FILE__),"../../lib/gem_name/version.rb"))
       end
 
       def add_version_file_to_git
