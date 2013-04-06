@@ -1,5 +1,12 @@
 #!/usr/bin/env ruby
 
+#pre commit hook to bump gem version automatically
+#Usage:
+#symlink the file to .git/hooks/pre-commit
+#PATCH=true git commit -m '<my commit msg>' #increments 0.2.11 to 0.2.12
+#MINOR=true git commit -m '<my commit msg>' #increments 0.2.11 to 0.3.11
+
+
 class Hooks
   class GemVersion
     class << self
